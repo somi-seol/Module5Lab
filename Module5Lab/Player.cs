@@ -15,15 +15,13 @@ namespace Module5Lab
 
         private int livesLeft;
 
-        public Player()
+        public Player() // constructor
         {
         }    
-
         public Player(string name)
         {
             this.name = name;
         }
-
         public Player(string name, int startingLives)
         {
             this.name = name;
@@ -42,7 +40,7 @@ namespace Module5Lab
 
         public void Kill()
         {
-            // We make sure they can't get negative lives.
+            // 
             if (livesLeft > 0)
             {
                 livesLeft--;
@@ -55,5 +53,5 @@ namespace Module5Lab
             return livesLeft;
         }
 
-    } //end class
-} //end namespace
+    } // end class
+} // end namespace
